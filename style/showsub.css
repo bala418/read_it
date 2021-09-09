@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+ }
+ 
+body{
+    background-color: #dae0e6;
+    color: #222222;
+    padding-top: 100px;
+}
+
+
+
+/* =========================================TOP NAV BAR==================================*/
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    /* padding: 1%; */
+    justify-content: space-between;
+    z-index: 1;
+
+
+}
+.nav img{
+    width: 35px;
+
+}
+
+.userpfp {
+    min-width: 50px;
+    /* background-color: red; */
+    /* margin: 10px; */
+    border-radius: 50%;
+}
+
+.nav a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+.nav h1{
+    font-size: 40px;
+    color: #1e97e8;
+
+}
+.nav h2{
+    font-size: 30px;
+}
+
+.nav div:hover{
+    background-color: #e9e9e9;
+
+}
+
+.b1,.b2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    width: 40%;
+}
+
+/*================================ SIngle post style========================== */
+
+
+.singlepost{
+    margin-left:10%;
+    background-color: #f7f9fa;
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 1% 4% 1% 4%;
+    /* outline: 3px solid blue; */
+}
+.singlepost:hover{
+    /* margin-left:10%;
+    background-color: #202021;
+    width: 50%; */
+    outline:1px solid black;
+}
+
+
+.singlepost h1{
+    font-size: 22px;
+    
+}
+.singlepost h2{
+    font-size: 15px;
+    
+}
+.singlepost h3{
+    font-size: 14px;
+    color:#939799;
+}
+
+.singlepost h5{
+    font-size: 14px;
+}
+
+
+.firstline{
+    display: flex;
+    justify-content: space-between;
+    /* outline:3px solid rebeccapurple; */
+}
+
+
+.subpic{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post img {
+    display:block;
+    margin:auto;
+    margin-bottom: 2%;
+}
+
+.view button{
+    background-color: #f7f9fa;
+    color: rgb(34, 34, 34);
+    border: 0px;
+    /* padding: 1px; */
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment{
+    display: flex;
+    align-items:center;
+    padding: 2px;
+}
+h6{
+    font-size:14px;
+}
+.comment:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.postarea{
+    /* outline:10px solid goldenrod; */
+    /* background-color: red; */
+    width: 65%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+/* ===================================================================== */
+.listsub{
+    position: sticky;
+    top: 90px;
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    margin-left: 1%;
+    background-color: #f7f9fa;
+padding: 1% 0% 1% 1%;
+outline :1px solid rgb(43, 43, 43);
+}
+.listsub h1{
+font-size: 26px;
+}
+
+.listsub h3{
+font-size: 18px;
+font-weight: 100;
+}
+
+.sameline{
+    display: flex;
+    align-items: center;
+}
+
+.likeb{
+    cursor: pointer;
+}
+
+.likeb:hover{
+    color: #209bec;
+}
+
+.join {
+
+    background-color: #1e97e8; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #1e97e8;
+  width: 6rem;
+
+}
+.join:hover{
+    background-color: #1e97e8;
+    color: white;
+}
+.join:hover span {display:none}
+.join:hover:before {content:"Join now!"}
+
+.leave {
+    border: none;
+    padding: 5px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: #1e97e8; 
+  color: white; 
+  border: 2px solid #1e97e8;
+  width: 6rem;
+}
+.leave:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+.leave:hover span {display:none}
+.leave:hover:before {content:"Leave"}
+.final{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}

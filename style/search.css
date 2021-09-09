@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+ }
+ 
+ body{
+     background-color: #dae0e6;
+     color: #222222;
+     padding-top: 100px;
+     /* color: #0091ff; */
+ }
+ 
+ 
+ 
+ /* =========================================TOP NAV BAR==================================*/
+ .nav{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     background-color: #ffffff;
+     /* padding: 1%; */
+     justify-content: space-evenly;
+   
+  
+ }
+ .nav img{
+     width: 35px;
+ 
+ }
+ 
+ .nav .b3{
+     width: 20%;
+ }
+ 
+ input[type="text"]{
+     width: 100%;
+     padding: 3%;
+     background: url("../images/search.png") no-repeat scroll 7px 7px;
+     background-color: #f6f7f8;
+     border-radius: 1%;
+     border: none;
+     color: #363636;
+     font-size: 16px;
+     
+     padding-left:32px;
+     outline:1px solid black;
+ }
+ input[type="text"]:focus{
+     outline: 2px solid #1e97e8;
+ }
+ .userpfp {
+     min-width: 50px;
+     /* background-color: red; */
+     /* margin: 10px; */
+     border-radius: 50%;
+ }
+ 
+ .nav a{
+     color:inherit;
+     text-decoration: inherit;
+ }
+ 
+ .nav h1{
+     font-size: 40px;
+     color: #1e97e8;
+ 
+  
+ }
+ .nav h2{
+     font-size: 30px;
+ }   
+ 
+ .nav div:hover{
+     background-color: #e9e9e9;
+ 
+ }
+ 
+ .b1,.b2{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     /* background-color: red; */
+     width: 40%;
+ }
+
+ 
+.singlepost{
+    margin-left:10%;
+    background-color: #f7f9fa;
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 1% 4% 1% 4%;
+    /* outline: 3px solid blue; */
+}
+.singlepost:hover{
+    outline:1px solid black;
+}
+
+
+.singlepost h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    
+}
+.singlepost h2{
+    font-size: 15px;
+    
+}
+.singlepost h3{
+    font-size: 14px;
+    color:#939799;
+    
+}
+
+.singlepost h5{
+    font-size: 14px;
+}
+
+
+.firstline{
+    display: flex;
+    justify-content: space-between;
+    /* outline:3px solid rebeccapurple; */
+}
+
+
+.subpic{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post img {
+    display:block;
+    margin:auto;
+    margin-bottom: 2%;
+}
+
+.view button{
+    background-color: #f7f9fa;
+    color: rgb(34, 34, 34);
+    border: 0px;
+    /* padding: 1px; */
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment{
+    display: flex;
+    align-items:center;
+    padding: 2px;
+}
+h6{
+    font-size:14px;
+}
+.comment:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.postarea{
+    /* outline:10px solid goldenrod; */
+    /* background-color: red; */
+    width: 65%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.listsub{
+    /* float: right; */
+    position: sticky;
+    top: 90px;
+    vertical-align: top;
+    display: inline-block;
+    /* outline : 2px solid greenyellow; */
+    width: 25%;
+    margin-left: 1%;
+    background-color: #f7f9fa;
+   padding: 1% 0% 1% 0%;
+   outline :1px solid rgb(43, 43, 43);
+   /* height: 396px; */
+}
+
+.listsub button{
+    background-color: #f7f9fa;
+    color: #131313;
+    border: 0px;
+    font-size: 20px;
+    /* margin: 1% 0% 3% 7%; */
+}
+.listsub button:hover{
+    /* background-color: #333333; */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.subli{
+    display: flex;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    /* outline: 1px solid goldenrod; */
+    padding: 3px;
+    padding-left: 16px;
+}
