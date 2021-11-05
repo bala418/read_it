@@ -9,7 +9,7 @@ session_start();
 if (isset($_SESSION['username'])) {
 } else {
     echo "hi";
-    header("location:login.php");
+    header("location:signup.php");
 }
 
 $sql = "SELECT * from posts inner join subreddit on posts.post_subid=subreddit.subredditid  order by post_time DESC";
@@ -68,7 +68,7 @@ while ($row = mysqli_fetch_array($ull)) {
 
 
         <!-- <div class="b1"> -->
-        <div><a href="home1.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
+        <div><a href="index.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
         <div>
             <h1>Read-It</h1>
         </div>

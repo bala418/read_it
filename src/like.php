@@ -46,7 +46,7 @@ if (isset($_POST['likep'])) {
     $sql = "INSERT into likes (postid,userid) values('$a','$b1')";
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        header("location:home1.php");
+        header("location:index.php");
     } else {
         echo "easfdfdfadfasdfasdf";
     }

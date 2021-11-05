@@ -36,7 +36,9 @@
                 </div>
 
                 <div><button type="submit" onclick="return validate()">Submit</button></div>
-                <div><a style="text-align:center;" href="login.php">Exisiting user? Go here to login.</a></div>
+                <div><a style="text-align:center;" href="login.php">Exisiting user? Go here to login.</a>
+                    <p>Note: Skip registration process by using Michael as the username and 12345678 as the pasword in the login page</p>
+                </div>
 
 
 

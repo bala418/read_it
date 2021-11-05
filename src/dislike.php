@@ -48,7 +48,7 @@ if (isset($_POST['dislike'])) {
     $sql = "DELETE from likes where userid='$b1' and postid='$a'";
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        header("location:home1.php");
+        header("location:index.php");
     } else {
         // echo "easfdfdfadfasdfasdf";
         echo $b1;

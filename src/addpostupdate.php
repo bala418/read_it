@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $sql);
 
 if ($result) {
     echo '<script>alert("Post edited! Redirecting back to home page");
-        window.location.href="home1.php"</script>';
+        window.location.href="index.php"</script>';
 } else {
     echo "error";
 }

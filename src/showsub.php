@@ -46,7 +46,7 @@ $hm = mysqli_fetch_assoc($result1);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sub Reddit</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/showsub.css">
 
@@ -60,7 +60,7 @@ $hm = mysqli_fetch_assoc($result1);
 
 
         <div class="b1">
-            <div><a href="home1.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
+            <div><a href="index.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
             <div>
                 <h1>Read-It</h1>
             </div>

@@ -52,7 +52,7 @@ if (isset($_POST["submit"])) {
     if ($result) {
         // header("location:login.php");
         echo '<script>alert("Post added! Redirecting back to home page");
-        window.location.href="home1.php"</script>';
+        window.location.href="index.php"</script>';
     } else {
         echo "There is an error in the query";
     }

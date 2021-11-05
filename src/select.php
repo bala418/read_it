@@ -17,7 +17,7 @@ $count = mysqli_num_rows($result);
 if ($count > 0) {
     // $_SESSION['userid']=$y;
     $_SESSION['username'] = $x;
-    header("location:home1.php");
+    header("location:index.php");
 } else {
     echo "<h1>Wrong Password! please try again</h1>";
 }

@@ -13,7 +13,6 @@ if (isset($_GET['onepost'])) {
 }
 
 $_SESSION['zzz'] = $l;
-$_SESSION['cp'] = $l;
 $sql = "SELECT * from posts WHERE postid = $l";
 
 
@@ -61,7 +60,7 @@ $r = mysqli_fetch_assoc($subname);
 
 
         <!-- <div class="b1"> -->
-        <div><a href="home1.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
+        <div><a href="index.php"><img src="images/redditlogo.png" alt="" style="width: 50px;"></a></div>
         <div>
             <h1>Read-It</h1>
         </div>
@@ -109,7 +108,11 @@ $r = mysqli_fetch_assoc($subname);
 
 
 
-        <div class="singlepost" data-aos="fade-right">
+        <div class="singlepost" data-aos="zoom-in-left">
+            <form action="addcomment.php" method="GET">
+                <input type="text" name="com" placeholder="A +ve comment :)" required>
+                <button type="submit" value="csub" name="cs">Post!</button>
+            </form>
             <h3 class="c">Comments:</h3>
             <?php foreach ($xy as $w) { ?>
                 <div class="firstline">
@@ -146,15 +149,7 @@ $r = mysqli_fetch_assoc($subname);
         <div>
             <h3><?php echo $r['subdesc'] ?></h3>
         </div>
-        <form action="editdelete.php" method="get">
-            <div>
-                <button name="eord" value="edit" class="mspe">Edit the post</button>
-            </div>
-            <div>
-                <button name="eord" value="delete" class="mspe mspd">Delete the post</button>
 
-            </div>
-        </form>
     </div>
     <script src="https://kit.fontawesome.com/126c326f6b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
